@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <h1 align:center><b>COVID 19 TRACKER</b></h1>
+    <hr>
+    <Tracker />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Tracker from './components/Tracker.vue';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    Tracker
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+h1{
+  position: relative;
+  width: 100%;
+  align-self: center;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'archia';
 }
 </style>
