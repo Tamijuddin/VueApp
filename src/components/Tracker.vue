@@ -59,13 +59,13 @@ export default {
       return arr;
     }
   },
-created(){
+mounted(){
     axios.get('https://api.rootnet.in/covid19-in/stats/latest')
     .then(response => {
       console.log(response);
       this.regional = response.data.data.regional,
       this.summary = response.data.data.summary,
-      this.refresh=response.data.lastRefreshed
+      this.refresh = response.data.lastRefreshed
     })
   }
 }
